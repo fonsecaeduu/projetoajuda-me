@@ -71,7 +71,7 @@
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
   margin-bottom: 3rem;
 }
@@ -120,53 +120,76 @@
 
 /* Responsive Design */
 @media (max-width: 768px) {
+  .projects-page {
+    padding-top: 50px;
+  }
+  
+  .projects-header {
+    padding: 2rem 0;
+  }
+  
   .page-title {
-    font-size: 2.5rem;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
   }
-
+  
   .page-subtitle {
-    font-size: 1.1rem;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    max-width: 100%;
+    padding: 0 1rem;
   }
-
+  
+  .projects-content {
+    padding: 1rem 0;
+  }
+  
+  .container {
+    padding: 0 1rem;
+  }
+  
+  .filters {
+    margin-bottom: 1.5rem;
+  }
+  
   .filter-buttons {
     gap: 0.5rem;
-  }
-
-  .filter-btn {
-    padding: 0.6rem 1.25rem;
-    font-size: 0.9rem;
-  }
-
-  .projects-grid {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-  }
-
-  .projects-cta {
-    padding: 2rem;
-    margin: 1rem;
-  }
-
-  .projects-cta p {
-    font-size: 1.1rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .page-title {
-    font-size: 2rem;
-  }
-
-  .page-subtitle {
-    font-size: 1rem;
-  }
-
-  .filter-buttons {
     flex-direction: column;
     align-items: center;
   }
-
+  
   .filter-btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.85rem;
+    border-radius: 35px;
     width: 200px;
+  }
+  
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+  }
+  
+  .no-projects {
+    padding: 1.5rem 1rem;
+    font-size: 0.9rem;
+  }
+  
+  .projects-cta {
+    padding: 1.5rem 1rem;
+  }
+  
+  .projects-cta p {
+    font-size: 1rem;
+    margin-bottom: 1.25rem;
+  }
+  
+  .btn {
+    padding: 0.6rem 1.5rem;
+    font-size: 0.9rem;
+    max-width: 250px;
+    width: 100%;
   }
 } 

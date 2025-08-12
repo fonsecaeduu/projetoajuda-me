@@ -152,12 +152,21 @@ body {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-  .container {
-    padding: 0 1rem;
+  .App-header {
+    margin: 0.5rem;
+    padding: 1rem;
+    border-radius: 12px;
+  }
+  
+  .App-logo {
+    height: 25vmin;
   }
   
   .btn {
-    padding: 0.6rem 1.5rem;
-    font-size: 0.9rem;
+    padding: 0.5rem 1.25rem;
+    font-size: 0.85rem;
+    margin: 0.3rem;
+    width: 100%;
+    max-width: 250px;
   }
 }
