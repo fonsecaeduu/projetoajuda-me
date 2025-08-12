@@ -12,12 +12,10 @@ const ProjectCard = ({ project }) => {
     <div className="project-card">
       <div className="project-image">
         <img src={project.image} alt={project.title} />
-        <div className="project-overlay">
-          <div className="project-price">{project.price}</div>
-        </div>
       </div>
       <div className="project-content">
         <h3 className="project-title">{project.title}</h3>
+        <div className="project-price">{project.price}</div>
         <p className="project-description">{project.description}</p>
         <button className="buy-button" onClick={handleBuyClick}>
           <span className="button-text">Solicitar</span>

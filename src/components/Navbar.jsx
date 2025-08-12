@@ -13,30 +13,34 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar-container">
-        <Link to="/" className="navbar-logo">
-          <span className="logo-text">Ajuda-me Estudos</span>
+        <Link to="/" className="navbar-brand">
+          Ajuda-me Estudos
         </Link>
         
-        <div className={`navbar-menu ${isMenuOpen ? 'active' : ''}`}>
-          <Link 
-            to="/" 
-            className={`navbar-link ${location.pathname === '/' ? 'active' : ''}`}
-            onClick={() => setIsMenuOpen(false)}
-          >
-            Home
-          </Link>
-          <Link 
-            to="/projects" 
-            className={`navbar-link ${location.pathname === '/projects' ? 'active' : ''}`}
-            onClick={() => setIsMenuOpen(false)}
-          >
-            Serviços
-          </Link>
-        </div>
+        <ul className={`navbar-nav ${isMenuOpen ? 'active' : ''}`}>
+          <li className="nav-item">
+            <Link 
+              to="/" 
+              className={`nav-link ${location.pathname === '/' ? 'active' : ''}`}
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Home
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link 
+              to="/projects" 
+              className={`nav-link ${location.pathname === '/projects' ? 'active' : ''}`}
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Serviços
+            </Link>
+          </li>
+        </ul>
 
-        <div className="navbar-toggle" onClick={toggleMenu}>
-          <span className={`hamburger ${isMenuOpen ? 'active' : ''}`}></span>
-        </div>
+        <button className="navbar-toggle" onClick={toggleMenu}>
+          ☰
+        </button>
       </div>
     </nav>
   );

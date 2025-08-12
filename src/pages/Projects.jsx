@@ -33,14 +33,6 @@ const Projects = () => {
     },
     {
       id: 4,
-      title: "Relatórios de Laboratório",
-      description: "Elaboração de relatórios técnicos para disciplinas práticas com metodologia científica",
-      image: "./src/images/placeholder.png",
-      price: "R$ 100",
-      category: "laboratorio"
-    },
-    {
-      id: 5,
       title: "Artigos Científicos",
       description: "Desenvolvimento de artigos acadêmicos com pesquisa bibliográfica e metodologia adequada",
       image: "./src/images/placeholder.png",
@@ -48,23 +40,15 @@ const Projects = () => {
       category: "artigos"
     },
     {
-      id: 6,
-      title: "Apresentações Acadêmicas",
-      description: "Criação de slides e apresentações para seminários, congressos e defesas de trabalho",
-      image: "./src/images/placeholder.png",
-      price: "R$ 100",
-      category: "apresentacoes"
-    },
-    {
-      id: 7,
-      title: "Resumos e Resenhas",
-      description: "Elaboração de resumos críticos e resenhas de livros e artigos acadêmicos",
+      id: 5,
+      title: "Resumos",
+      description: "Elaboração de resumos críticos de livros e artigos acadêmicos",
       image: "./src/images/placeholder.png",
       price: "R$ 100",
       category: "resumos"
     },
     {
-      id: 8,
+      id: 6,
       title: "Orientação Personalizada",
       description: "Acompanhamento individual para desenvolvimento de projetos acadêmicos específicos",
       image: "./src/images/placeholder.png",
@@ -78,9 +62,7 @@ const Projects = () => {
     { id: 'portfolios', name: 'Portfólios' },
     { id: 'tcc', name: 'TCC' },
     { id: 'revisao', name: 'Revisão' },
-    { id: 'laboratorio', name: 'Laboratório' },
     { id: 'artigos', name: 'Artigos' },
-    { id: 'apresentacoes', name: 'Apresentações' },
     { id: 'resumos', name: 'Resumos' },
     { id: 'orientacao', name: 'Orientação' }
   ];

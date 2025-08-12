@@ -1,14 +1,18 @@
 .home {
-  padding-top: 70px;
+  padding-top: 48px;
 }
 
 /* Hero Section */
 .hero {
-  min-height: 100vh;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px;
+  width: 100%;
+  min-height: 95vh;
   display: flex;
   align-items: center;
-  background: linear-gradient(135deg, #c3ffc3 60%, #97ffc4 100%);
-  color: #222;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+  color: #ffffff;
   position: relative;
   overflow: hidden;
 }
@@ -40,11 +44,11 @@
   font-weight: 700;
   margin-bottom: 1rem;
   line-height: 1.2;
-  color: #11998e;
+  color: #ffffff;
 }
 
 .highlight {
-  background: linear-gradient(135deg, #43e97b, #22aa6a);
+  background: linear-gradient(135deg, #d4af37, #f4d03f);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -55,7 +59,7 @@
   font-weight: 500;
   margin-bottom: 1rem;
   opacity: 0.9;
-  color: #222;
+  color: #e8e8e8;
 }
 
 .hero-description {
@@ -63,7 +67,7 @@
   line-height: 1.6;
   margin-bottom: 2rem;
   opacity: 0.8;
-  color: #444;
+  color: #cccccc;
 }
 
 .hero-buttons {
@@ -87,37 +91,38 @@
 }
 
 .btn-primary {
-  background: linear-gradient(135deg, #43e97b, #38f9d7);
-  color: #fff;
+  background: linear-gradient(135deg, #d4af37, #f4d03f);
+  color: #1a1a2e;
 }
 
 .btn-primary:hover {
-  background: linear-gradient(135deg, #38f9d7, #43e97b);
-  color: #fff;
-  box-shadow: 0 4px 16px rgba(67, 233, 123, 0.15);
+  background: linear-gradient(135deg, #f4d03f, #d4af37);
+  color: #1a1a2e;
+  box-shadow: 0 4px 16px rgba(212, 175, 55, 0.3);
 }
 
 .btn-secondary {
-  background: #f7f9fa;
-  color: #11998e;
-  border: 2px solid #43e97b;
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  border: 2px solid #d4af37;
+  backdrop-filter: blur(10px);
 }
 
 .btn-secondary:hover {
-  background: #43e97b;
-  color: #fff;
-  border-color: #11998e;
+  background: #d4af37;
+  color: #1a1a2e;
+  border-color: #d4af37;
 }
 
 .btn-outline {
   background: transparent;
-  color: #43e97b;
-  border: 2px solid #43e97b;
+  color: #d4af37;
+  border: 2px solid #d4af37;
 }
 
 .btn-outline:hover {
-  background: #43e97b;
-  color: white;
+  background: #d4af37;
+  color: #1a1a2e;
   transform: translateY(-2px);
 }
 
@@ -128,13 +133,14 @@
 }
 
 .profile-card {
-  background: #fff;
+  background: rgba(255, 255, 255, 0.1);
   border-radius: 20px;
   padding: 4rem;
   height: 400px;
   text-align: center;
-  border: 1px solid #eafaf1;
-  box-shadow: 0 8px 32px rgba(67, 233, 123, 0.2);
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
 }
 
 .profile-image {
@@ -143,7 +149,7 @@
   margin: 0 auto 1rem;
   border-radius: 50%;
   overflow: hidden;
-  border: 4px solid #eafaf1;
+  border: 4px solid #d4af37;
 }
 
 .profile-image img {
@@ -155,25 +161,25 @@
 .profile-info h3 {
   font-size: 1.5rem;
   margin-bottom: 0.5rem;
-  color: #11998e;
+  color: #f8d972;
 }
 
 .profile-info p {
   opacity: 0.8;
   font-size: 1rem;
-  color: #001d0a;
+  color: #e8e8e8;
 }
 
 /* About Section */
 .about {
   padding: 5rem 0;
-  background: #f7f9fa;
+  background: #f8f9fa;
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 95%;
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 0 2.5%;
 }
 
 .section-title {
@@ -181,58 +187,85 @@
   font-weight: 700;
   text-align: center;
   margin-bottom: 1rem;
-  color: #11998e;
+  color: #1a1a2e;
 }
 
 .section-subtitle {
   text-align: center;
   font-size: 1.2rem;
-  color: #43e97b;
+  color: #6c757d;
   margin-bottom: 3rem;
 }
 
 .about-content {
-  max-width: 800px;
-  margin: 0 auto;
+  width: 100%;
 }
 
-.about-text p {
+.about-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  text-align: justify;
+}
+
+.text-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 4rem;
+}
+
+.text-column p {
   font-size: 1.1rem;
   line-height: 1.8;
-  color: #444;
-  margin-bottom: 1.5rem;
+  color: #050507;
+  margin: 0 0 1.5rem 0;
+}
+
+#mission-text {
+  color: white;
+}
+
+.text-column p:last-child {
+  margin-bottom: 0;
 }
 
 .mission {
-  margin-top: 2rem;
-  padding: 2rem;
-  background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+  padding: 1.5rem;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
   border-radius: 20px;
   color: white;
   text-align: center;
+  box-shadow: 0 8px 32px rgba(26, 26, 46, 0.2);
+  margin-bottom: 1.5rem;
 }
 
 .mission h3 {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   margin-bottom: 1rem;
   font-weight: 600;
+  color: #d4af37;
 }
 
 .mission-text {
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   font-weight: 500;
   font-style: italic;
-  color: white;
+  color: #ffffff;
 }
 
 .services {
-  margin-top: 2rem;
+  padding: 1.5rem;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e9ecef;
 }
 
 .services h3 {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   margin-bottom: 1rem;
-  color: #11998e;
+  color: #1a1a2e;
+  text-align: center;
 }
 
 .services-grid {
@@ -243,18 +276,19 @@
 }
 
 .service-tag {
-  background: linear-gradient(135deg, #43e97b, #38f9d7);
+  background: linear-gradient(135deg, #1a1a2e, #16213e);
   color: white;
-  padding: 0.5rem 1rem;
-  border-radius: 25px;
-  font-size: 0.9rem;
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
   font-weight: 500;
+  border: 1px solid #d4af37;
 }
 
 /* Featured Projects Section */
 .featured-projects {
   padding: 5rem 0;
-  background: #fff;
+  background: #ffffff;
 }
 
 .projects-grid {
@@ -301,21 +335,34 @@
     font-size: 2rem;
   }
 
+  .text-columns {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
   .projects-grid {
     grid-template-columns: 1fr;
   }
 
   .mission {
-    padding: 1.5rem;
-    margin: 1rem;
+    padding: 1.25rem;
+    margin: 0 0 1.5rem 0;
   }
 
   .mission h3 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
 
   .mission-text {
-    font-size: 1.1rem;
+    font-size: 1rem;
+  }
+
+  .services {
+    padding: 1.25rem;
+  }
+
+  .services h3 {
+    font-size: 1.2rem;
   }
 }
 

@@ -12,12 +12,55 @@ body {
 }
 
 .App {
+  text-align: center;
   min-height: 100vh;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  color: #ffffff;
+}
+
+.App-header {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 2rem;
+  border-radius: 20px;
+  margin: 2rem;
+  border: 1px solid rgba(212, 175, 55, 0.3);
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-link {
+  color: #d4af37;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.App-link:hover {
+  color: #f4d03f;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 /* Scrollbar personalizada */
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 14px;
 }
 
 ::-webkit-scrollbar-track {
@@ -25,16 +68,15 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(135deg, #43e97b, #38f9d7);
-  border-radius: 4px;
+  background: linear-gradient(135deg, #ffd82b, #ecf938);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(135deg, #11998e, #43e97b);
+  background: linear-gradient(135deg, #d4b424, #b5be2a);
 }
 
 /* Animações globais */
-@keyframes fadeIn {
+@keyframes fadeIn { 
   from {
     opacity: 0;
     transform: translateY(20px);
@@ -56,6 +98,7 @@ body {
   padding: 0 2rem;
 }
 
+/* Estilos para os botões */
 .btn {
   padding: 0.75rem 2rem;
   border-radius: 50px;
@@ -67,39 +110,43 @@ body {
   text-align: center;
   border: none;
   cursor: pointer;
+  margin: 0.5rem;
 }
 
 .btn-primary {
-  background: linear-gradient(135deg, #43e97b, #38f9d7);
-  color: white;
+  background: linear-gradient(135deg, #d4af37, #f4d03f);
+  color: #1a1a2e;
 }
 
 .btn-primary:hover {
+  background: linear-gradient(135deg, #f4d03f, #d4af37);
+  color: #1a1a2e;
   transform: translateY(-2px);
-  box-shadow: 0 10px 25px rgba(67, 233, 123, 0.15);
+  box-shadow: 0 4px 16px rgba(212, 175, 55, 0.3);
 }
 
 .btn-secondary {
-  background: #f7f9fa;
-  color: #11998e;
-  border: 2px solid #43e97b;
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  border: 2px solid #d4af37;
+  backdrop-filter: blur(10px);
 }
 
 .btn-secondary:hover {
-  background: #43e97b;
-  color: #fff;
-  border-color: #11998e;
+  background: #d4af37;
+  color: #1a1a2e;
+  border-color: #d4af37;
 }
 
 .btn-outline {
   background: transparent;
-  color: #43e97b;
-  border: 2px solid #43e97b;
+  color: #d4af37;
+  border: 2px solid #d4af37;
 }
 
 .btn-outline:hover {
-  background: #43e97b;
-  color: white;
+  background: #d4af37;
+  color: #1a1a2e;
   transform: translateY(-2px);
 }
 

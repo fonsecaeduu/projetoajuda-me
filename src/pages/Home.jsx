@@ -71,41 +71,49 @@ const Home = () => {
       {/* About Section */}
       <section className="about">
         <div className="container">
-          <h2 className="section-title">Sobre Nós</h2>
+          <h2 className="section-title">Sobre</h2>
           <div className="about-content">
             <div className="about-text">
-              <p>
-                O Ajuda-me Estudos é uma plataforma criada para facilitar a vida de estudantes universitários, 
-                oferecendo suporte prático e acessível nas atividades acadêmicas mais desafiadoras. 
-                Aqui, você encontra portfólios prontos — atividades completas e organizadas de disciplinas 
-                que envolvem ensaios laboratoriais, com base nas exigências de cursos de graduação, 
-                especialmente nas áreas técnicas e de engenharia.
-              </p>
-              <p>
-                Além dos portfólios, também oferecemos auxílio especializado na elaboração e correção de TCCs 
-                (Trabalhos de Conclusão de Curso), ideal para quem precisa de orientação personalizada ou revisão crítica.
-              </p>
-              <p>
-                Quando falamos em avaliação, entendemos que há diferentes ritmos, realidades e formas de aprender — 
-                e respeitamos isso profundamente. Sabemos que, muitas vezes, é necessário manter o ambiente virtual 
-                em ordem, e por isso nossa assessoria vai além do conteúdo: cuidamos para que tudo esteja organizado, 
-                claro e alinhado com o que você precisa.
-              </p>
-              <div className="mission">
-                <h3>Nossa Missão</h3>
-                <p className="mission-text">
-                  Te ajudar a estudar com mais eficiência, confiança e autonomia.
-                </p>
-              </div>
-              <div className="services">
-                <h3>Nossos Serviços</h3>
-                <div className="services-grid">
-                  <span className="service-tag">Portfólios Prontos</span>
-                  <span className="service-tag">Elaboração de TCC</span>
-                  <span className="service-tag">Revisão Acadêmica</span>
-                  <span className="service-tag">Orientação Personalizada</span>
-                  <span className="service-tag">Correção de Trabalhos</span>
-                  <span className="service-tag">Suporte Acadêmico</span>
+              <div className="text-columns">
+                <div className="text-column">
+                  <p>
+                    O Ajuda-me Estudos é uma plataforma criada para facilitar a vida de estudantes universitários, 
+                    oferecendo suporte prático e acessível nas atividades acadêmicas mais desafiadoras. 
+                    Aqui, você encontra portfólios prontos — atividades completas e organizadas de disciplinas 
+                    que envolvem ensaios laboratoriais, com base nas exigências de cursos de graduação, 
+                    especialmente nas áreas técnicas e de engenharia.
+                  </p>
+                </div>
+                <div className="text-column">
+                  <p>
+                    Além dos portfólios, também oferecemos auxílio especializado na elaboração e correção de TCCs 
+                    (Trabalhos de Conclusão de Curso), ideal para quem precisa de orientação personalizada ou revisão crítica.
+                  </p>
+                  <p>
+                    Quando falamos em avaliação, entendemos que há diferentes ritmos, realidades e formas de aprender — 
+                    e respeitamos isso profundamente. Sabemos que, muitas vezes, é necessário manter o ambiente virtual 
+                    em ordem, e por isso nossa assessoria vai além do conteúdo: cuidamos para que tudo esteja organizado, 
+                    claro e alinhado com o que você precisa.
+                  </p>
+                </div>
+                <div className="text-column">
+                  <div className="mission">
+                    <h3>Nossa Missão</h3>
+                    <p className="mission-text" id='mission-text'>
+                      Te ajudar a estudar com mais eficiência, confiança e autonomia.
+                    </p>
+                  </div>
+                  <div className="services">
+                    <h3>Nossos Serviços</h3>
+                    <div className="services-grid">
+                      <span className="service-tag">Portfólios Prontos</span>
+                      <span className="service-tag">Elaboração de TCC</span>
+                      <span className="service-tag">Revisão Acadêmica</span>
+                      <span className="service-tag">Orientação Personalizada</span>
+                      <span className="service-tag">Correção de Trabalhos</span>
+                      <span className="service-tag">Suporte Acadêmico</span>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

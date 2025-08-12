@@ -1,12 +1,11 @@
 .projects-page {
-  padding-top: 70px;
+  padding-top: 80px;
+  background: linear-gradient(135deg, #f8f9fa 60%, #e9ecef 100%);
+  color: #1a1a2e;
   min-height: 100vh;
-  background: #fff;
 }
 
 .projects-header {
-  background: linear-gradient(135deg, #f7f9fa 60%, #eafaf1 100%);
-  color: #11998e;
   padding: 4rem 0;
   text-align: center;
 }
@@ -15,24 +14,27 @@
   font-size: 3rem;
   font-weight: 700;
   margin-bottom: 1rem;
-  color: #11998e;
+  color: #1a1a2e;
 }
 
 .page-subtitle {
   font-size: 1.2rem;
-  opacity: 0.9;
+  color: #6c757d;
   max-width: 600px;
   margin: 0 auto;
   line-height: 1.6;
-  color: #444;
 }
 
 .projects-content {
-  padding: 3rem 0;
-  background: #f7f9fa;
+  padding: 2rem 0;
 }
 
-/* Filtros */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
 .filters {
   margin-bottom: 3rem;
   text-align: center;
@@ -46,31 +48,27 @@
 }
 
 .filter-btn {
-  background: white;
-  border: 2px solid #43e97b;
-  color: #11998e;
   padding: 0.75rem 1.5rem;
+  border: 2px solid #d4af37;
+  color: #1a1a2e;
+  background: transparent;
   border-radius: 50px;
   font-weight: 600;
-  font-size: 0.95rem;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 
 .filter-btn:hover {
-  border-color: #38f9d7;
-  color: #38f9d7;
-  transform: translateY(-2px);
+  border-color: #f4d03f;
+  color: #f4d03f;
 }
 
 .filter-btn.active {
-  background: linear-gradient(135deg, #43e97b, #38f9d7);
-  color: white;
-  border-color: #43e97b;
-  box-shadow: 0 5px 15px rgba(67, 233, 123, 0.10);
+  background: linear-gradient(135deg, #d4af37, #f4d03f);
+  color: #1a1a2e;
+  border-color: #d4af37;
 }
 
-/* Grid de Projetos */
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -78,28 +76,46 @@
   margin-bottom: 3rem;
 }
 
-/* Mensagem quando não há projetos */
 .no-projects {
   text-align: center;
   padding: 3rem;
-  color: #11998e;
-  font-size: 1.1rem;
+  color: #6c757d;
 }
 
-/* CTA Section */
 .projects-cta {
   text-align: center;
-  background: #fff;
-  padding: 3rem;
-  border-radius: 20px;
-  box-shadow: 0 10px 30px rgba(67, 233, 123, 0.08);
-  margin-top: 2rem;
+  padding: 3rem 0;
 }
 
 .projects-cta p {
   font-size: 1.2rem;
-  color: #11998e;
-  margin-bottom: 1.5rem;
+  color: #1a1a2e;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  padding: 0.75rem 2rem;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  display: inline-block;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #d4af37, #f4d03f);
+  color: #1a1a2e;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, #f4d03f, #d4af37);
+  color: #1a1a2e;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(212, 175, 55, 0.3);
 }
 
 /* Responsive Design */
